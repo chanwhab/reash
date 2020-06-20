@@ -1,0 +1,149 @@
+$nav-padding-top: 74px;
+
+#reash .r-nav {
+	// fixed navigation
+	position: fixed;
+	top: 0px;
+	left: 0;
+	right: 0;
+	max-width: $break-lg;
+	margin: 0 auto;
+	background: $background;
+	z-index: 999;
+	font-family: $display-font;
+	font-weight: 400;
+	height: $header-sm-height ;
+	@media screen and (min-width: $break-md) {
+		height: $header-lg-height;
+	}
+	.r-nav-logo {
+		float: left;
+		height: 64px;
+		width: 64px;
+		padding-top: ($header-sm-height - 64)/2;
+		margin-left: $margin-sm;
+		position: relative;
+		z-index: 1000;
+		@media screen and (min-width: $break-md) {
+			margin: 30px 0px 0px 11px;
+		}
+		img {
+			display: block;
+		}
+	}
+		
+	.r-nav-list {
+		// mobile mode
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		transition: transform .5s easein;
+		transform: translateY(-100%);
+		@media screen and (min-width: $break-md) {
+			transform: translateY(0%);
+		}
+		
+		.r-nav-toggle {
+			appearance: none;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			border: none;
+			background: none;
+			text-decoration: none;
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: $margin-sm;
+			height: $header-sm-height;
+			color: $base-color;
+			&:hover, &:focus, &:active {
+				color: $active-color;
+			}
+			svg:first-child {
+				display: none;
+			}
+		}
+		
+		a {			
+			letter-spacing: 0.84px;
+			box-sizing: border-box;
+			width: 100%;
+			font-size: 24px;
+			line-height: 28px;
+			padding: $margin-sm 0;
+			text-align: center;
+			display: none;
+			@media screen and (min-width: $break-md) {
+				font-size: 14px;
+				line-height: 15px;
+				padding: 0 $margin-sm/2;
+				width: auto;
+			}
+		}
+		
+		// desktop mode
+		@media screen and (min-width: $break-md) {
+			position: relative;
+			float: left;
+			padding-top: $nav-padding-top; 
+			a {
+				display: block;
+				float: left;
+				padding: 0 $margin-sm/2;
+				width: initial;
+				position: relative;
+				&:not(:last-child) {
+					border-right: 1px solid $base-color;
+				}
+			}
+			.r-nav-toggle {
+				display: none;
+			}
+		}
+		
+		// mobile active mode
+		&.is-active {
+			transition: transform .3s ease;
+			transform: translateY(0);
+			// limit the style to small to medium only
+			@media screen and (max-width: $break-md) {
+				transition: transform .3s ease;
+				background: white;
+				transform: translateY(0);
+				height:100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				a {
+					display: block;
+				}
+				.r-nav-toggle {
+					svg:first-child {
+						display: block;
+					}
+					svg:last-child {
+						display: none;
+					}
+				}
+			}
+			
+		}
+			
+
+	}
+	
+	.r-nav-link {
+		font-size: 14px;
+		line-height: 15px;
+		display: none;
+		// desktop mode
+		@media screen and (min-width: $break-md) {
+			display: block;
+			float: right;
+			margin: $nav-padding-top $margin-lg 0 0;
+		}
+	}
+}

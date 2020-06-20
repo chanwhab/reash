@@ -1,0 +1,76 @@
+#reash .r-s2 {
+	margin: $margin-lg*2 auto 0;
+	padding-bottom: 200%;
+	@media screen and (min-width: $break-md) {
+		max-width: ($break-lg - 2*$margin-lg);
+		padding-bottom: 9/21*100%;	
+	}
+	position: relative;
+	.r-s2-grid {
+		// margin-top: $margin-lg;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height:100%;
+		display: grid;
+
+		grid-template-columns: 1fr 2fr .5fr 0.5fr 2fr 2fr 1fr  0.5fr 1fr 3fr 1fr 1fr ;
+		grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr repeat(6, 0.3fr) 2.5fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		
+		.grid-header { grid-area: 1 / 1 / 2 / 13; }
+		.grid-paragraph { grid-area: 12 / 1 / 13 / 13; } 
+		.grid-mission-1 { grid-area: 2 / 3 / 6 / 11; }
+		.grid-mission-2 { grid-area: 8 / 3 / 12 / 8; }
+		.grid-mission-3 { grid-area: 3 / 1 / 7 / 12; }
+		.grid-mission-4 { grid-area: 5 / 2 / 8 / 9; }
+		.grid-mission-5 { grid-area: 4 / 10 / 9 / 13; }
+		.grid-mission-6 { grid-area: 6 / 4 / 11 / 7; }
+		
+		@media screen and (min-width: $break-md) {
+			grid-template-columns:  3fr 0.3fr 1fr 0.3fr 1fr .5fr 0.25fr 0.25fr repeat(2, 0.5fr) ;
+			grid-template-rows: 0.5fr 1fr 1fr 0.5fr 0.5fr 0.5fr 0.25fr;
+			grid-column-gap: 0px;
+			grid-row-gap: 0px;		
+			.grid-header{ grid-area: 1 / 1 / 3 / 3; }
+			.grid-paragraph { grid-area: 3 / 1 / 8 / 2; }
+			.grid-mission-4 { grid-area: 3 / 2 / 5 / 6; }
+			.grid-mission-6 { grid-area: 4 / 5 / 7 / 8; }
+			.grid-mission-1 { grid-area: 5 / 4 / 8 / 9; }
+			.grid-mission-3 { grid-area: 2 / 3 / 5 / 10; }
+			.grid-mission-5 { grid-area: 3 / 7 / 6 / 11; }
+			.grid-mission-2 { grid-area: 1 / 5 / 5 / 9; }
+		}
+		
+		// style
+		& > div {
+			background-size: cover;
+		}
+		.grid-header { 
+			font-family: $display-font;
+			font-weight: bold;
+			font-size: 15vw;
+			line-height: 0.9;	
+			padding: 0 $margin-sm;
+			z-index: 9;
+			align-self: end;
+			@media screen and (min-width: $break-md) {
+				font-size: 90px;
+			}
+		}
+		.grid-paragraph {
+			font-family: "roboto", sans-serif;
+			font-size: 16px;
+			font-weight: 300;
+			padding: 0 $margin-sm;
+		}
+		.grid-mission-1,.grid-mission-2 {
+			background: $active-color;
+		}
+		
+		
+	
+	}
+}

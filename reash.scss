@@ -1,0 +1,63 @@
+$break-sm: 640px;
+$break-md: 1020px;
+$break-lg: 1440px;
+$background: #FBF2E9; 
+
+// color
+$base-color: #222222;
+$active-color: #7DA488;
+
+//font
+$base-font: "Roboto", sans-serif;
+$display-font: "Space Mono", sans-serif;
+
+//header
+$header-lg-height: 128px;
+$header-sm-height: 84px;
+
+// spacing
+$margin-sm: 21px;
+$margin-lg: 78px;
+
+// @import "scss/typography";
+// @import "scss/_sal";
+
+
+@import "scss/_nav";
+@import "scss/_section-1";
+@import "scss/_section-2";
+@import "scss/_section-3";
+@import "scss/_section-4";
+@import "scss/_section-5";
+@import "scss/_section-6";
+@import "scss/_section-7";
+
+body { background: $background; 
+	overflow-x: hidden;
+}
+#reash {
+	
+	background: $background;
+	min-height: 100vh; // not necessary
+	max-width: $break-lg;
+	margin: 0 auto;
+	width: 100%;
+	color: $base-color;
+	margin-top: $header-sm-height;
+	@media screen and (min-width: $break-md) {
+		margin-top: $header-lg-height;
+	}
+	a {
+		color: $base-color;
+		text-decoration: none;
+		transition: color .3s ease;
+		&:hover {
+			color: $active-color;
+		}
+	}
+}				
+
+.zoom-overlay {background: $background};
+.vjs-big-play-button { display: none};
+
+// #reash-mission,#reash-making-of-a-shoe,#reash-collections,#reash-shop-now { padding-top: 98px !important; margin-top: -98px !important;}

@@ -1,0 +1,17 @@
+#reash .r-s7 {
+	margin: 200px 0;
+	@media screen and (min-width: $break-sm) {
+		margin: 300px 0;
+	}
+	.link {
+		display: block;
+		text-align: center;
+		max-width: 672px;
+		margin: 0 auto;
+		padding: 0 $margin-sm;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}	
+}
