@@ -9,22 +9,8 @@ function toggleResponsiveMenu() {
 		x.className = "r-nav-list";
 	}
 } 
-// var menubuttons = document.getElementByClass("js-r-nav-btn");
-// for (var i=0; i < menubuttons.length; i++) {
-//     // Here we have the same onclick
-//     menubuttons.item(i).onclick = function btnclick() {
-// 		console.log("btn clickdetected");
-// 		toggleResponsiveMenu();
-// 	}
-// }	
 
 
-// // Init sal
-// sal({
-// 	threshold: 1,
-// 	once: false
-// })
-// 
 
 
 // init lax.js
@@ -41,4 +27,4 @@ window.onload = function() {
 
 
 // init zoom
-mediumZoom('[data-zoomable]')
+// mediumZoom('[data-zoomable]')

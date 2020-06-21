@@ -12,7 +12,7 @@
   height: 84px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav {
     height: 128px;
   }
@@ -28,7 +28,7 @@
   z-index: 1000;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav .r-nav-logo {
     margin: 30px 0px 0px 11px;
   }
@@ -51,7 +51,7 @@
           transform: translateY(-100%);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav .r-nav-list {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -94,7 +94,7 @@
   display: none;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav .r-nav-list a {
     font-size: 14px;
     line-height: 15px;
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav .r-nav-list {
     position: relative;
     float: left;
@@ -133,7 +133,7 @@
           transform: translateY(0);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 960px) {
   #reash .r-nav .r-nav-list.is-active {
     -webkit-transition: -webkit-transform .3s ease;
     transition: -webkit-transform .3s ease;
@@ -174,7 +174,7 @@
   display: none;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-nav .r-nav-link {
     display: block;
     float: right;
@@ -197,7 +197,7 @@
   height: auto;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s1 .r-s1-slogan img:first-child {
     display: none;
   }
@@ -209,7 +209,7 @@
   }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s1 .r-s1-slider {
     margin: 0 78px;
   }
@@ -306,7 +306,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s2 {
     max-width: 1284px;
     padding-bottom: 42.85714%;
@@ -393,7 +393,7 @@
   grid-area: 6 / 4 / 11 / 7;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s2 .r-s2-grid {
     -ms-grid-columns: 3fr 0.3fr 1fr 0.3fr 1fr 0.5fr 0.25fr 0.25fr (0.5fr)[2];
         grid-template-columns: 3fr 0.3fr 1fr 0.3fr 1fr 0.5fr 0.25fr 0.25fr repeat(2, 0.5fr);
@@ -476,7 +476,7 @@
       align-self: end;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s2 .r-s2-grid .grid-header {
     font-size: 90px;
   }
@@ -487,6 +487,7 @@
   font-size: 16px;
   font-weight: 300;
   padding: 0 21px;
+  text-align: justify;
 }
 
 #reash .r-s2 .r-s2-grid .grid-mission-1, #reash .r-s2 .r-s2-grid .grid-mission-2 {
@@ -506,10 +507,12 @@
 }
 
 #reash .r-s3 bold, #reash .r-s3 span {
+  display: block;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 480px) {
@@ -556,7 +559,7 @@
   grid-area: 2 / 1 / 3 / 2;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s4 .r-s4-grid {
     margin: 78px 78px 0 78px;
     -ms-grid-columns: 3fr 2fr;
@@ -590,6 +593,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  text-align: justify;
 }
 
 #reash .r-s4 .r-s4-grid .grid-header {
@@ -626,7 +630,7 @@
   text-align: right;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s4 .r-s4-grid .grid-header span {
     font-size: 124px;
   }
@@ -634,18 +638,21 @@
 
 #reash .r-s4 .r-s4-video {
   width: 100vw;
-  margin-left: calc(($break-sm - 100vw)/2);
+  margin-left: calc((break-sm - 100vw)/2);
+  margin-right: calc((480px - 100vw)/2);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s4 .r-s4-video {
-    margin-left: calc(($break-md - 100vw)/2);
+    margin-left: calc((960px - 100vw)/2);
+    margin-right: calc((960px - 100vw)/2);
   }
 }
 
 @media screen and (min-width: 1440px) {
   #reash .r-s4 .r-s4-video {
-    margin-left: calc(($break-smlg- 100vw)/2);
+    margin-left: calc((1440px - 100vw)/2);
+    margin-right: calc((1440px - 100vw)/2);
   }
 }
 
@@ -677,7 +684,7 @@
   grid-area: 2 / 1 / 3 / 2;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s5 .r-s5-grid {
     margin: 78px 78px 0 78px;
     -ms-grid-columns: 2fr 3fr;
@@ -711,6 +718,7 @@
       align-self: end;
   position: relative;
   font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 
 #reash .r-s5 bold {
@@ -720,7 +728,7 @@
   font-size: 72px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash .r-s5 bold {
     font-size: 7vw;
   }
@@ -739,7 +747,7 @@
   position: relative;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #reash .r-s6 {
     margin: 78px;
     padding-bottom: 56.25%;
@@ -806,7 +814,7 @@
   grid-area: 6 / 2 / 7 / 3;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #reash .r-s6 .r-s6-grid {
     -ms-grid-columns: 3fr (0.5fr)[2] 1fr 1.5fr;
         grid-template-columns: 3fr repeat(2, 0.5fr) 1fr 1.5fr;
@@ -868,7 +876,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #reash .r-s6 .r-s6-grid .grid-header {
     font-size: 64px;
     text-align: left;
@@ -881,6 +889,7 @@
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  text-align: justify;
 }
 
 #reash .r-s6 .r-s6-grid .grid-description bold {
@@ -909,7 +918,7 @@
   color: white;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 480px) {
   #reash .r-s6 .r-s6-grid .grid-description .grid-button {
     position: absolute;
     top: 0;
@@ -924,8 +933,8 @@
 #reash .r-s6 .r-s6-grid .r-s6-image img {
   height: calc(100% - 24px);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: bottom;
      object-position: bottom;
 }
@@ -986,7 +995,7 @@ body {
   margin-top: 84px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   #reash {
     margin-top: 128px;
   }

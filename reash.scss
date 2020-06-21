@@ -1,5 +1,5 @@
-$break-sm: 640px;
-$break-md: 1020px;
+$break-sm: 480px;
+$break-md: 960px;
 $break-lg: 1440px;
 $background: #FBF2E9; 
 
@@ -21,7 +21,6 @@ $margin-lg: 78px;
 
 // @import "scss/typography";
 // @import "scss/_sal";
-
 
 @import "scss/_nav";
 @import "scss/_section-1";
