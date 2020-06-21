@@ -3,10 +3,8 @@
   top: 0px;
   left: 0;
   right: 0;
-  max-width: 1440px;
-  margin: 0 auto;
+  z-index: 9;
   background: #FBF2E9;
-  z-index: 999;
   font-family: "Space Mono", sans-serif;
   font-weight: 400;
   height: 84px;
@@ -16,6 +14,11 @@
   #reash .r-nav {
     height: 128px;
   }
+}
+
+#reash .r-nav .r-nav-container {
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 #reash .r-nav .r-nav-logo {
@@ -1013,7 +1016,7 @@ body {
 }
 
 .zoom-overlay {
-  background: #FBF2E9;
+  background: #FBF2E9 !important;
 }
 
 .vjs-big-play-button {

@@ -56,7 +56,7 @@ body { background: $background;
 	}
 }				
 
-.zoom-overlay {background: $background};
+.zoom-overlay {background: $background !important;};
 .vjs-big-play-button { display: none};
 
 // #reash-mission,#reash-making-of-a-shoe,#reash-collections,#reash-shop-now { padding-top: 98px !important; margin-top: -98px !important;}
