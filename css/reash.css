@@ -769,8 +769,8 @@
   display: grid;
   -ms-grid-columns: 21px 1fr 21px;
       grid-template-columns: 21px 1fr 21px;
-  -ms-grid-rows: 1fr 1.5fr 2fr 0.3fr 2fr 1fr;
-      grid-template-rows: 1fr 1.5fr 2fr 0.3fr 2fr 1fr;
+  -ms-grid-rows: 1fr 1.5fr 2fr 0.3fr 1fr 1fr;
+      grid-template-rows: 1fr 1.5fr 2fr 0.3fr 1fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
