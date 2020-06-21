@@ -938,8 +938,8 @@
 #reash .r-s6 .r-s6-grid .r-s6-image img {
   height: calc(100% - 24px);
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
 }
