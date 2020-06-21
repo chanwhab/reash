@@ -4,6 +4,8 @@
 	@media screen and (min-width: $break-md) {
 		max-width: ($break-lg - 2*$margin-lg);
 		padding-bottom: 9/21*100%;	
+		margin-left: $margin-lg;
+		margin-right: $margin-lg;
 	}
 	position: relative;
 	.r-s2-grid {
@@ -54,7 +56,7 @@
 			font-size: 15vw;
 			line-height: 0.9;	
 			padding: 0 $margin-sm;
-			z-index: 9;
+			z-index: 2;
 			align-self: end;
 			@media screen and (min-width: $break-md) {
 				font-size: 90px;

@@ -10,7 +10,8 @@ function toggleResponsiveMenu() {
 	}
 } 
 
-
+//init  smooth scroll
+var scroll = new SmoothScroll('a[href*="#"]');
 
 
 // init lax.js

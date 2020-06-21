@@ -313,6 +313,8 @@
   #reash .r-s2 {
     max-width: 1284px;
     padding-bottom: 42.85714%;
+    margin-left: 78px;
+    margin-right: 78px;
   }
 }
 
@@ -473,7 +475,7 @@
   font-size: 15vw;
   line-height: 0.9;
   padding: 0 21px;
-  z-index: 9;
+  z-index: 2;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -958,6 +960,13 @@
   line-height: 48px;
   text-align: center;
   border-radius: 999px;
+}
+
+#reash .r-s6 .r-s6-grid .grid-hero {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100% !important;
+  background-style: cover;
 }
 
 #reash .r-s7 {
