@@ -95,16 +95,16 @@
 		}
 		.r-s6-image  {
 			position: relative;
+			align-self: end;
 			img {
-				height: calc(100% - 24px);
 				width: 100%;
-				object-fit: cover;
-				object-position:  bottom;
+				height: auto;
+
 			}
 			
 			&:after {
 				position: absolute;
-				bottom: 0;
+				bottom: -24px;
 				left: 50%;
 				transform:translateX(-50%);
 				background: $base-color;

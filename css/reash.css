@@ -933,20 +933,19 @@
 
 #reash .r-s6 .r-s6-grid .r-s6-image {
   position: relative;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 #reash .r-s6 .r-s6-grid .r-s6-image img {
-  height: calc(100% - 24px);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
+  height: auto;
 }
 
 #reash .r-s6 .r-s6-grid .r-s6-image:after {
   position: absolute;
-  bottom: 0;
+  bottom: -24px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
