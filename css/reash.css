@@ -966,7 +966,14 @@
   position: relative;
   width: 100%;
   padding-bottom: 100% !important;
-  background-style: cover;
+  background-size: cover;
+}
+
+#reash .r-s6 .r-s6-grid .grid-backdrop {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.26087% !important;
+  background-size: cover;
 }
 
 #reash .r-s7 {

@@ -123,9 +123,9 @@
 		.grid-hero {
 			position: relative;
 			width: 100%;
-			padding-bottom: 100% !important;;
+			padding-bottom: 100% !important;
 			// background: red;
-			background-style: cover;
+			background-size: cover;
 			// img {
 			// 	position: absolute;
 			// 	top: 0;
@@ -136,6 +136,12 @@
 			// }
 		}
 		
+		.grid-backdrop {
+			position: relative;
+			width: 100%;
+			padding-bottom: (381 / 575 * 100%) !important;
+			background-size: cover;
+		}
 		
 	}
 	
