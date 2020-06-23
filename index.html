@@ -4,15 +4,79 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<!-- css -->
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
 	<link rel="stylesheet" href="./css/min/reash.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono:wght@400;700&display=swap"
 		rel="stylesheet">
-
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" autocomplete="" media="screen">
 	<link href="https://vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+
+	<!-- require js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+	<script>
+
+	define('global/window', [], () => {
+		return window;
+	});
+
+	define('global/document', ['global/window'], (window) => {
+		return window.document;
+	});
+
+	require.config({
+		paths: {
+			"domReady": "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min",
+			"laxjs": "./js/lax",
+			// "smoothScroll": "https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.min",
+			"zoom": "https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min",
+			"flickity": "https://unpkg.com/flickity@2/dist/flickity.pkgd.min",
+			"videojs": "https://vjs.zencdn.net/7.8.2/video.min"
+		},
+		map: {
+			'*': {
+				"video.js": "videojs"
+			} 
+		}
+	});
+
+	function toggleResponsiveMenu() {
+		console.log("toggleResponsiveMenu()");
+		var x = document.getElementById("reash-respsonsive-menu");
+		if (x.className === "r-nav-list") {
+			x.className += " is-active";
+		} else {
+			x.className = "r-nav-list";
+		}
+	} 
+	
+	require(['domReady'], function(domReady){
+		console.log('dom is ready');
+
+		require(["videojs"], function (videojs) {
+			window.videojs = videojs;
+		});
+
+		require(["zoom","flickity"], function(){
+			require(["laxjs"], function(){
+				lax.setup();
+				const updateLax = () => {
+					lax.update(window.scrollY);
+					window.requestAnimationFrame(updateLax);
+				}
+				window.requestAnimationFrame(updateLax);
+			})
+
+			// require(["smoothScroll"], function() {
+			// 	var scroll = new SmoothScroll('a[href*="#"]');
+			// })
+		})
+		
+	});
+
+	</script>
+	
 </head>
 
 <body>
@@ -168,7 +232,7 @@
 			</div>
 		</div>
 		<div class="r-s4-video">
-			<video id="my-player" class="video-js" data-setup='{}' muted autoplay controls fluid=true>
+			<video id="v-s4-videojs" class="video-js" data-setup='{}' muted autoplay controls fluid=true>
 				<source
 					src="https://player.vimeo.com/external/430723013.hd.mp4?s=8620660d7e944f6dd1222090d957e5a4b7771363&profile_id=175"
 					type="video/mp4">
@@ -291,14 +355,6 @@
 		</a>
 	</section>
 	</div>
-
-	<!-- init js -->
-	<script src="./js/lax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script>
-	<script src="https://vjs.zencdn.net/7.8.2/video.min.js"></script>
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<script src="./reash.js"></script>
 
 </body>
 </html>

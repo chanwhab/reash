@@ -71,15 +71,15 @@
 	.r-s4-video {
 		// max-width:100%; 
 		width: 100vw;
-		margin-left:  calc((#{break-sm} - 100vw)/2) ;
-		margin-right:  calc((#{$break-sm} - 100vw)/2) ;
-		@media screen and (min-width: $break-md) {
-			margin-left:  calc((#{$break-md} - 100vw)/2) ;
-			margin-right:  calc((#{$break-md} - 100vw)/2) ;
-		}
+		// margin-left:  calc((#{$break-sm} - 100vw) / 2) ;
+		// margin-right:  calc((#{$break-sm} - 100vw) / 2) ;
+		// @media screen and (min-width: $break-md) {
+		// 	margin-left:  calc((#{$break-md} - 100vw) / 2) ;
+		// 	margin-right:  calc((#{$break-md} - 100vw) / 2) ;
+		// }
 		@media screen and (min-width: $break-lg) {
-			margin-left:  calc((#{$break-lg} - 100vw)/2) ;
-			margin-right:  calc((#{$break-lg} - 100vw)/2) ;
+			margin-left:  calc((#{$break-lg} - 100vw) / 2) ;
+			margin-right:  calc((#{$break-lg} - 100vw) / 2) ;
 			
 		}
 	}
