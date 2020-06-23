@@ -30,8 +30,13 @@ $margin-lg: 78px;
 @import "scss/_section-5";
 @import "scss/_section-6";
 @import "scss/_section-7";
+	
+header {
+	display: none !important;
+}
 
-body { background: $background; 
+body { 
+	background: $background; 
 	overflow-x: hidden;
 }
 #reash {

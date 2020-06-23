@@ -1,24 +1,21 @@
-<body>
+<style>header{display:none !important}</style>
 
 
-	<!-- remove this on public -->
-	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-	
 	<!-- css -->
-	<link rel="stylesheet" href="/reash.css">
+	<link rel="stylesheet" href="{{ media url=wysiwyg/reash/reash.css }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 	
 	
 	<!-- flickity.js -->
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" autocomplete=""media="screen">
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"  rel="stylesheet"></script>
 	
 	<!-- videojs -->
 	<link href="https://vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet" >
-	<script src="https://vjs.zencdn.net/7.8.2/video.min.js"></script>
-	
+	<script src="https://vjs.zencdn.net/7.8.2/video.min.js"  rel="stylesheet"></script>
+
 	<!-- lax js -->
-	<script src="/js/lax.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script>
+	<script src="{{ media url=wysiwyg/reash/js/lax.js}}" rel="stylesheet""></script>
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.min.js" src_type="url"></script>
 
 	<!--zoom.js-->
 	<link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
@@ -27,9 +24,10 @@
 	<div id="reash">
 		<section class="r-nav">
 			<div class="r-nav-container">
+
 			<div class="r-nav-logo">
 				<a href="https://www.ash.com">
-					<img src="/images/ash-logo.png" />
+					<img src="{{ media url=wysiwyg/reash/images/ash-logo.png}}" />
 				</a> 
 			</div>
 			<div class="r-nav-list" id="reash-respsonsive-menu">
@@ -38,10 +36,10 @@
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>menu-8</title><g stroke-linecap="round" stroke-linejoin="round" stroke-width="1" transform="translate(0.5 0.5)" fill="#000000" stroke="#000000"><line fill="none" stroke-miterlimit="10" x1="2" y1="16" x2="30" y2="16"></line> <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="2" y1="7" x2="30" y2="7"></line> <line fill="none" stroke="#000000" stroke-miterlimit="10" x1="2" y1="25" x2="30" y2="25"></line></g></svg>
 				</button>
 				
-				<a data-scroll onclick="toggleResponsiveMenu()" href="#reash-mission">MISSON</a>
-				<a data-scroll onclick="toggleResponsiveMenu()" href="#reash-making-of-a-shoe">MAKING OF A SHOE</a>
-				<a data-scroll onclick="toggleResponsiveMenu()" href="#reash-collections">COLLECTIONS</a>
-				<a data-scroll onclick="toggleResponsiveMenu()" href="#reash-shop-now">SHOP NOW</a>
+				<a onclick="toggleResponsiveMenu()" href="#reash-mission">MISSON</a>
+				<a onclick="toggleResponsiveMenu()" href="#reash-making-of-a-shoe">MAKING OF A SHOE</a>
+				<a onclick="toggleResponsiveMenu()" href="#reash-collections">COLLECTIONS</a>
+				<a onclick="toggleResponsiveMenu()" href="#reash-shop-now">SHOP NOW</a>
 			</div>
 			<a class="r-nav-link" href="https://www.ash.com"> ASH.COM</a>
 		</div>
@@ -49,50 +47,50 @@
 		
 		<section class="r-s1">
 			<div class="r-s1-slogan">	
-				<img src="/images/menu2-320.png" />
-				<img src="/images/menu2.png" />
+				<img src="{{ media url=wysiwyg/reash/images/menu2-320.png}}" />
+				<img src="{{ media url=wysiwyg/reash/images/menu2.png}}" />
 			</div>
 			<div class="r-s1-slider" data-flickity='{"cellAlign": "center","contain":true, "prevNextButtons": false, "loop": true }'>
 				<!--slide1-->
 				<div class="r-s1-slide">
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_1.jpg" alt="Reash Banner 1" />
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_mobile_1.jpg" alt="Reash Banner 1"" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_1.jpg}}" alt="Reash Banner 1" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_mobile_1.jpg}}" alt="Reash Banner 1"" />
 					<div class="r-s1-slide-text is-1">
-						<img src="/images/recycling.svg" />
+						<img src="{{ media url=wysiwyg/reash/images/recycling2.svg}}" />
 						<span>ASH JOURNEYS INTO THE GREEN ZONE</span>
 					</div>
 					<div class="r-s1-slide-text is-2">
-						<img src="/images/banner/Banner_REASH.png" />
+						<img src="{{ media url=wysiwyg/reash/images/banner/Banner_REASH.png}}" />
 					</div>
 				</div>
 				<!--slide2-->
 				<div class="r-s1-slide">
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_2.jpg" alt="Reash Banner 2" />
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_mobile_2.jpg" alt="Reash Banner 2" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_2.jpg}}" alt="Reash Banner 2" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_mobile_2.jpg}}" alt="Reash Banner 2" />
 					<div class="r-s1-slide-text is-1">
+					    <img src="{{ media url=wysiwyg/reash/images/recycling2.svg}}" />
 						<span>ASH JOURNEYS INTO THE GREEN ZONE</span>
 					</div>
 					<div class="r-s1-slide-text is-2">
-						<img src="/images/banner/Banner_REASH.png" />
+						<img src="{{ media url=wysiwyg/reash/images/banner/Banner_REASH.png}}" />
 					</div>
 				</div>
 				<!--slide3-->
 				<div class="r-s1-slide">
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_3.jpg" alt="Reash Banner 3" />
-					<img class="r-s1-slide-image" src="/images/banner/topbanner_mobile_3.jpg" alt="Reash Banner 3" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_3.jpg}}" alt="Reash Banner 3" />
+					<img class="r-s1-slide-image" src="{{ media url=wysiwyg/reash/images/banner/topbanner_mobile_3.jpg}}" alt="Reash Banner 3" />
 					<div class="r-s1-slide-text is-1">
-						<img src="/images/recycling.svg" />
+						<img src="{{ media url=wysiwyg/reash/images/recycling2.svg}}" />
 						<span>ASH JOURNEYS INTO THE GREEN ZONE</span>
 					</div>
 					<div class="r-s1-slide-text is-2">
-						<img src="/images/banner/Banner_REASH.png" />
+						<img src="{{ media url=wysiwyg/reash/images/banner/Banner_REASH.png}}" />
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		
-		
+
 		
 		<section class="r-s2" id="reash-mission">
 			<div class="r-s2-grid">
@@ -105,15 +103,16 @@
 				</div>
 				<div class="grid-mission-1 lax" 
 					data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.7) 1 | easing='easeInOutQuad'" data-lax-translate-y="vh 200, (vh*0.8) 200, (vh*0.7) 0 | easing='easeInOutQuad'"  data-lax-anchor="self"></div>
-				<div class="grid-mission-2 lax"
-					data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.4) 1 | easing='easeInOutQuad'" data-lax-translate-x="vh -200, (vh*0.6) -200, (vh*0.4) 0 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
-				<div class="grid-mission-3 lax" style="background-image: url('/images/Our mission/Our_mission_3.jpg')"
+				<div class="grid-mission-2></div>
+				<div class="grid-mission-3 lax" style="background-image: url('./images/Our mission/Our_mission_3.jpg')"
+				data-lax-opacity="vh 0, (vh*0.8) 0.2, (vh*0.7) 1 | easing='easeInOutQuad'"
+				data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.6) 0 | easing='easeInOutQuad'"
+				data-lax-anchor="self"></div>
+				<div class="grid-mission-4 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/Ourmission/Our_mission_4.jpg}}')" 
 					data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.6) 1 | easing='easeInOutQuad'" data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
-				<div class="grid-mission-4 lax" style="background-image: url('/images/Our mission/Our_mission_4.jpg')" 
-					data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.6) 1 | easing='easeInOutQuad'" data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
-				<div class="grid-mission-5 lax" style="background-image: url('/images/Our mission/Our_mission_5.jpg')" 
+				<div class="grid-mission-5 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/Ourmission/Our_mission_5.jpg}}')" 
 					data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.6) 1 | easing='easeInOutQuad'" data-lax-translate-x="vh 200, (vh*0.7) 200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
-				<div class="grid-mission-6 lax" style="background-image: url('/images/Our mission/Our_mission_6.jpg')" 
+				<div class="grid-mission-6 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/Ourmission/Our_mission_6.jpg}}')" 
 					data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.7) 1 | easing='easeInOutQuad'" data-lax-translate-y="vh 200, (vh*0.8) 200, (vh*0.7) 0 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 			</div>
 		</section>
@@ -125,7 +124,7 @@
 		
 		<section class="r-s4" id="reash-making-of-a-shoe">
 			<div class="r-s4-grid">
-				<div class="grid-header lax" data-lax-translate-y="vh -300, (vh*0.5) -300, (vh*0.3) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.5) 0, (vh*0.3) 1 | easing='easeInOutQuad'" data-lax-anchor="self" >
+				<div class="grid-header lax" data-lax-translate-y="vh -400, (vh*0.6) -400, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.5) 0, (vh*0.3) 1 | easing='easeInOutQuad'" data-lax-anchor="self" >
 					<div>
 						<span>MAKING</span>
 						<span>OF A</span>
@@ -163,20 +162,20 @@
 		
 		<section class="r-s6">
 			<div class="r-s6-grid">
-				<div class="grid-backdrop lax" style="background-image: url('/images/collection/army_bis_1.jpg') ; "
+				<div class="grid-backdrop lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/army_bis_1.jpg}}') ; "
 				data-lax-translate-y="vh -300, (vh*0.8) -300, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-hero2 lax r-s6-image"	data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
-					<img class="" src="/images/collection/army_bis-schema.jpg" data-action="zoom">
+					<img class="" src="{{ media url=wysiwyg/reash/images/collection/army_bis-schema.jpg}}" data-action="zoom">
 				</div>
 				
-				<!-- <div class="grid-hero2 lax" style="background-image: url('/images/banner/collection/amy_bis_2.png'); background-size: contain;"
+				<!-- <div class="grid-hero2 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/banner/collection/amy_bis_2.png}}'); background-size: contain;"
 				data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div> -->
-				<div class="grid-hero lax" style="background-image: url('/images/collection/army_bis_3.gif'); background-position: center;"
+				<div class="grid-hero lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/army_bis_3.gif}}'); background-position: center;"
 				data-lax-scale="vh 0.7, (vh*0.7) 0.7, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-header lax" 
 				data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-anchor="self">ARMY BIS</div>
 				<div class="grid-description lax"
-				data-lax-translate-x="vh 200, (vh*0.8) 200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
+				data-lax-translate-x="vh 0, (vh*0.7) 0, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 1, (vh*0.60) 1  | easing='easeInOutQuad'" data-lax-anchor="self">
 					<bold>ARMY BIS</bold>
 					<p>Get tough in these water-resistant combat boots featuring a stylish camouflage print and chunky sneaker sole.</p>
 					<a href="{{store url=''}}" class="grid-button">Shop Now</a>
@@ -186,19 +185,19 @@
 		
 		<section class="r-s6">
 			<div class="r-s6-grid is-reverse">
-				<div class="grid-backdrop lax" style="background-image: url('/images/collection/Moby_studs_1.jpg') ; "
+				<div class="grid-backdrop lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/Moby_studs_1.jpg}}') ; "
 				data-lax-translate-y="vh -300, (vh*0.8) -300, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-hero2 lax r-s6-image"	data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
-					<img class="" src="/images/collection/Moby_studs-schema.jpg" data-action="zoom">
+					<img class="" src="{{ media url=wysiwyg/reash/images/collection/Moby_studs-schema.jpg}}" data-action="zoom">
 				</div>
-				<!-- <div class="grid-hero2 lax" style="background-image: url('/images/banner/collection/Mody_bis_3.png'); background-size: contain;"
+				<!-- <div class="grid-hero2 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/banner/collection/Mody_bis_3.png}}'); background-size: contain;"
 				data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div> -->
-				<div class="grid-hero lax" style="background-image: url('/images/collection/Moby_studs_2.gif'); background-position: center;"
+				<div class="grid-hero lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/Moby_studs_2.gif}}'); background-position: center;"
 				data-lax-scale="vh 0.7, (vh*0.7) 0.7, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-header lax"
 				data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-anchor="self">Moby Studs</div>
 				<div class="grid-description lax"
-				data-lax-translate-x="vh 200, (vh*0.8) 200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
+				data-lax-translate-x="vh 0, (vh*0.7) 0, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 1, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
 					<bold>Moby Studs</bold>
 					<p>Classic white sneakers go green. This pair is updated with thick platforms and fashionable spike studs.</p>
 					<a href="{{store url=''}}" class="grid-button">Shop Now</a>
@@ -208,23 +207,23 @@
 		
 		<section class="r-s6">
 			<div class="r-s6-grid">
-				<div class="grid-backdrop lax" style="background-image: url('/images/collection/Spider_1.jpg') ; "
+				<div class="grid-backdrop lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/Spider_1.jpg}}') ; "
 				data-lax-translate-y="vh -300, (vh*0.8) -300, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-hero2 lax r-s6-image"	data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
-					<img class="" src="/images/collection/Spider-schema.jpg" data-action="zoom">
+					<img class="" src="{{ media url=wysiwyg/reash/images/collection/Spider-schema.jpg}}" data-action="zoom">
 				</div>
 
 				
 				<!-- 
-				<div class="grid-hero2 lax" style="background-image: url('/images/banner/collection//Spider_3.png'); background-size: contain;"
-				data-zoomable data-zoom-src="/images/banner/collection/Spider_schema.jpg"
+				<div class="grid-hero2 lax" style="background-image: url('{{ media url=wysiwyg/reash/images/banner/collection//Spider_3.png}}'); background-size: contain;"
+				data-zoomable data-zoom-src="{{ media url=wysiwyg/reash/images/banner/collection/Spider_schema.jpg}}"
 				data-lax-translate-x="vh 200, (vh*0.6) 200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.6) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div> -->
-				<div class="grid-hero lax" style="background-image: url('/images/collection/Spider_2.gif'); background-position: center;"
+				<div class="grid-hero lax" style="background-image: url('{{ media url=wysiwyg/reash/images/collection/Spider_2.gif}}'); background-position: center;"
 				data-lax-scale="vh 0.7, (vh*0.7) 0.7, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.50) 1 | easing='easeInOutQuad'" data-lax-anchor="self"></div>
 				<div class="grid-header lax" 
 				data-lax-translate-x="vh -200, (vh*0.7) -200, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.7) 0, (vh*0.5) 1 | easing='easeInOutQuad'" data-lax-anchor="self">ARMY BIS</div>
 				<div class="grid-description lax"
-				data-lax-translate-x="vh 200, (vh*0.8) 200, (vh*0.6) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 0, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
+				data-lax-translate-x="vh 0, (vh*0.7) 0, (vh*0.5) 0 | easing='easeInOutQuad'" data-lax-opacity="vh 0, (vh*0.8) 1, (vh*0.60) 1 | easing='easeInOutQuad'" data-lax-anchor="self">
 					<bold>SPIDER/SPIDER STUDS</bold>
 					<p>Our best-selling sneaker comes with a futuristic look thanks to its accented heel and sole, which is crafted from eco-friendly materials</p>
 					<a href="{{store url=''}}" class="grid-button">Shop Now</a>
@@ -236,7 +235,7 @@
 		
 		<section class="r-s7" id="reash-shop-now">
 			<a class="link" href="{{store url=''}}">
-				<img src="/images/REASH-yourself.png" />
+				<img src="{{ media url=wysiwyg/reash/images/REASH-yourself.png}}" />
 			</a>
 		</section>
 	</div>
@@ -244,8 +243,59 @@
 	
 	
 	<!-- init js -->	
-	<script src="/reash.js"></script>
+	<script src="{{ media url=wysiwyg/reash/reash.js}}"></script>
+
+
+	<style>
+		#reash .r-nav .r-nav-logo img{
+			width:64px;
+		}
+		#reash .r-s4{
+			margin-top:80px !important;
+		}
+       
+		#reash .r-s6 .r-s6-grid .grid-description .grid-button{
+			padding: 8px 42px !important;
+		}
+		
+		#reash .r-s2{
+			margin: 100px auto 0 !important;
+		}
+		.making-of-a-shoe-p{
+			font-size: 24px;
+		}
+		
+		#reash .r-s7{
+			margin: 200px 0 !important;
+		}
+		@media screen and (min-width: 960px){
+			
+			#reash .r-s2 .r-s2-grid .grid-header{
+				font-size: 120px !important;
+			}	
+			
+        #reash .r-s1 .r-s1-slogan img:last-child{
+	    width: 42px;}
 	
-</body>
-
-
+		}
+		
+		 @media screen and (max-width: 1419px)and (min-width: 961px){
+		   #reash .r-s4 .r-s4-video{
+			 margin-left:  calc((1336px - 100vw)/2) !important;
+			 margin-right: calc((1336px - 100vw)/2) !important;
+			}
+			
+		}
+		
+	    @media screen and (min-width: 1420px){
+		   #reash .r-s4 .r-s4-video{
+			 margin-left:  calc((1420px - 100vw)/2) !important;
+			 margin-right: calc((1420px - 100vw)/2) !important;
+			}
+			}	
+		
+		@media screen and (max-width: 480px){
+			.making-of-a-shoe-p{
+			font-size:16px !important;}
+			}
+	</style>

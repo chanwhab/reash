@@ -989,6 +989,10 @@
   height: auto;
 }
 
+header {
+  display: none !important;
+}
+
 body {
   background: #FBF2E9;
   overflow-x: hidden;
